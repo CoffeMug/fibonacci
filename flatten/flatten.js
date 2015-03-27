@@ -50,8 +50,8 @@ function flatten() {
     // Use two nested forEach loops to flatten the movieLists into a list of video ids.
     // ------------   INSERT CODE HERE!  ----------------------------
 
-    movieLists.forEach(function (movieCategory) {
-        movieCategory.videos.forEach(function (videoItem) {
+    movieLists.forEach(function (videoLists) {
+        videoLists.videos.forEach(function (videoItem) {
             var id = videoItem.id;
             allVideoIdsInMovieLists.push(id);
         });
@@ -63,7 +63,7 @@ function flatten() {
 /** 
  * A tiny print function to test flatten()
  * This function is called from flatten.html
- * to visualize the results.
+ * to visualize the result.
  */
 function print() {
     var ids = flatten();
