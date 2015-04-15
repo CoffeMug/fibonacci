@@ -35,7 +35,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>${basedir}/src/main/java/</classpathPrefix>
-              <mainClass>com.numbers.Numbers</mainClass>
+              <mainClass>com.fibonacci.Fibonacci</mainClass>
             </manifest>
           </archive>
         </configuration>
