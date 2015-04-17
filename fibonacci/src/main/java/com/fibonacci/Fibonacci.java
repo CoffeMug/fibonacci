@@ -6,9 +6,13 @@ import java.util.Scanner;
 public class Fibonacci {
 
     public static void main(String[] args) {
-        System.out.println("Please enter an integer ");
+        System.out.println("Please enter an integer bigger than or equal to 1");
         Scanner scan = new Scanner(System.in);
         int number = scan.nextInt();
+        if (number < 1) {
+            System.out.println("Illegal input!"); System.exit(1);
+        }
+ 
         System.out.println("Please select one of the methods bellow:\n");
         System.out.println("1) Recursive fibonacci\n");
         System.out.println("2) Tail recursive fibonacci\n");
