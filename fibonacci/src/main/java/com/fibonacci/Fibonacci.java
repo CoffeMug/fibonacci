@@ -45,8 +45,8 @@ public class Fibonacci {
                 endTime = System.nanoTime();
                 break;
             default:
-                System.out.print("Invalid method selected!");
-                break;
+                System.out.print("Invalid method selected!\n");
+                System.exit(1);
         }
         System.out.println("The result is:" + result.toString());
         System.out.println("Elapsed time in nanoseconds:" + (endTime - startTime));
