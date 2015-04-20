@@ -6,9 +6,14 @@ import java.util.Scanner;
 public class Fibonacci {
 
     public static void main(String[] args) {
+        int number = 0;
+        int method = 0;
+        long startTime = 0;
+        long endTime = 0;
+
         System.out.println("Please enter an integer bigger than or equal to 1");
         Scanner scan = new Scanner(System.in);
-        int number = scan.nextInt();
+        number = scan.nextInt();
         if (number < 1) {
             System.out.println("Illegal input!"); System.exit(1);
         }
@@ -18,17 +23,14 @@ public class Fibonacci {
         System.out.println("2) Tail recursive fibonacci\n");
         System.out.println("3) Iterative fibonacci\n");
         BigInteger result = new BigInteger("0");
-        int a = 0;
+        method = 0;
         if (scan.hasNextInt()) {
-            a = scan.nextInt();
+            method = scan.nextInt();
         } else {
             System.out.println("Enter one of the above option in number!");
         }
 
-        long startTime = 0;
-        long endTime = 0;
-
-        switch (a) {
+        switch (method) {
             case 1:
                 startTime = System.nanoTime();
                 result = recFib(number);
