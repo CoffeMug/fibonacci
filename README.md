@@ -3,7 +3,7 @@
 This is a simple program which can be used to compare 
 3 different implementations of Fibonacci algorithm in Java regarding
 the computation time.
-The three implementations are as follow:
+The three implementations are as follows:
 
 1. Recursive Fibonacci
 2. Tail recursive Fibonacci
